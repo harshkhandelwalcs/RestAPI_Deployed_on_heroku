@@ -1,5 +1,5 @@
-var x = {
-    functionName: function(req,res, next) {
+var data = {
+    getQuestions: function(req,res, next) {
         res.send({
             name: 'Harsh khandelwal'
         });
@@ -7,4 +7,4 @@ var x = {
     }
 }
 
-module.exports = x;
+module.exports = data;

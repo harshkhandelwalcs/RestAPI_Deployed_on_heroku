@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var x = require('../controllers/test.controller')
+var data = require('../controllers/questions.controller');
 
 /* GET home page. */
-router.get('/', x.functionName);
+router.get('/', data.getQuestions);
 
 module.exports = router;
