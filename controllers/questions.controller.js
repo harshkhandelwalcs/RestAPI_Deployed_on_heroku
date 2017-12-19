@@ -1,5 +1,6 @@
 var data = {
     getQuestions: function (req, res, next) {
+        let practiceTestName = req.query.name;
         let questionJson = {
             practiceTest1: {
                 q1: {
@@ -21,8 +22,8 @@ var data = {
                     options: ['S.S.Gupta', 'Kamal', 'S.R.Gupta', 'Kanahiya']
                 }
             }
-        };
-        res.send(questionJson);
+         } ;
+        res.send(questionJson[practiceTestName]);
         return;
     },
     getAnswers: function (req, res, next) {
