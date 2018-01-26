@@ -27,6 +27,7 @@ var data = {
         return;
     },
     getAnswers: function (req, res, next) {
+        let practiceTestName = req.query.name;
         let answerJson = {
             practiceTest1: {
                 q1: {
@@ -45,7 +46,7 @@ var data = {
                 }
             }
         };
-        res.send(answerJson);
+        res.send(answerJson[practiceTestName]);
         return;
     }
 }
