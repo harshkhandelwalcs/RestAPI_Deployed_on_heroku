@@ -10,6 +10,11 @@ var data = {
                 q2: {
                     text: "what is your hobby?",
                     options: ['Singing', 'Drawing', 'Playing Cricket', 'Watching cartoon']
+                //     options: [
+                //         {'Singing':true},
+                //         {'Drawing':false},
+                        
+                // ]
                 }
             },
             practiceTest2: {
